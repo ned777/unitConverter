@@ -25,8 +25,12 @@ public class MainActivity extends AppCompatActivity {
         Add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
-                String Value = inputText.getText().toString();
-                outputText.setText(Value);
+
+                double convertedNumber = (Double.valueOf(inputText.getText().toString()))/2;
+                String stringdouble= Double.toString(convertedNumber);
+
+                outputText.setText(stringdouble);
+
             }
         });
 
